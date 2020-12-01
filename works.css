@@ -1,0 +1,247 @@
+    .html { 
+	
+	margin-left: calc(100vw - 100%); 
+	
+	}
+	
+	.welcome{
+	z-index: 9;
+	
+	animation:fadeIn 2s;
+	
+	font-family:'Montserrat', sans-serif;
+	
+	width:60%;
+	
+	position: relative;
+	top:300px;
+	
+	font-size:70px;
+	
+	margin: 0 auto;
+	
+	}
+	
+	@keyframes fadeIn{
+	
+		from{
+	
+		opacity: 0;
+	
+		}	
+		
+		to{
+		
+		opacity: 1;
+		
+		}
+		
+	}
+	ul{
+	
+	list-style-type: none;
+ 	margin: -8px;
+  	padding: 10px;
+	background-color: #383838;
+	color: white;
+	white-space: nowrap;
+
+	}
+	ul li{
+		
+	display: inline;
+	
+	
+	}
+	.container0{ /* menu container*/
+	
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	margin: top 10px;
+	z-index: 100;
+	}
+	ul li a{
+	
+	color:white;
+	padding: 10px 200px;
+	text-decoration: none;
+	font-family:'Montserrat', sans-serif;
+	
+	}
+	ul li a:hover{
+	
+	color:black;
+	padding: 10px 200px;
+	text-decoration: none;
+	font-family:'Montserrat', sans-serif;
+	background-color: white;
+	
+	}
+	hr{
+	
+	position:relative;
+	top: 450px;
+	
+	}
+	/*
+	p{
+	
+	position:relative;
+	top: 450px;
+	font-family:'Montserrat', sans-serif;
+	
+	width:60%;
+	height: 60%;
+	
+	font: size 62px;
+	
+	margin: 0 auto;
+	
+	text-align:left;
+	
+}
+*/
+	.line{
+	
+	width: 60%;
+	z-index: 2;
+	
+	position: relative;
+	top:400px;
+	
+	}
+	.center{
+	
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 425px;
+	width: 40%;
+	max-width: 320px;
+	
+	position:fixed;
+	left: 415px;
+	
+	}
+	@media screen and (max-width: 1375px){
+
+		ul li{
+		
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		
+		}
+		ul li a:hover{
+	
+		color:black;
+		padding: 10px 200px;
+		text-decoration: none;
+		font-family:'Montserrat', sans-serif;
+		background-color: white;
+	
+		}
+		.welcome{
+			
+			font-size: 6vw;
+			z-index: 20;
+		}
+		
+	}
+	/* [THE ENTIRE TAB] */
+	.tab {
+		font-family:'Montserrat', sans-serif;
+		position: relative;
+		top: 420px;
+		height: 60%;
+		margin: 10px auto;
+		width: 60%;
+		max-width: 60%;
+	}
+	
+	/* [THE LABEL] */
+	.tab input {
+		display: none;
+	}
+	.tab label {
+	font-family:'Montserrat', sans-serif;
+	border: black ;
+	border-style: solid;
+	border-width: .1px;
+	display: block;
+	background: f2f2f2;
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+  }
+  .tab label::after {
+	content: "\25b6";
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: block;
+	transition: all 0.4s;
+  }
+  .tab input[type=checkbox]:checked + label::after,
+  .tab input[type=radio]:checked + label::after {
+	transform: rotate(90deg);
+  }
+  
+  /* [THE CONTENTS] */
+  .tab-content {
+	overflow: hidden;
+	background: transparent;
+	/* CSS animation will not work with auto height */
+	/* This is why we use max-height */
+	transition: max-height 0.4s; 
+	max-height: 0;
+	border: black ;
+	padding-right: 30%;
+	border-style: solid;
+	border-width: .1px;
+  }
+  .tab-content p {
+	margin: 20px;
+	color: black;
+  }
+  .tab input:checked ~ .tab-content {
+	/* Set the max-height to a large number */
+	/* Or 100% viewport height */
+	max-height: 100vh;
+  }
+  
+  /* [DOES NOT MATTER] */
+  html, body {
+	font-family: arial;
+	background: #f2f2f2;
+  }
+.tablist {
+
+	all: unset;
+
+}
+ .a019 {
+
+	font-family:'Montserrat', sans-serif;
+
+	position: relative;
+	top: 400px;
+	left:20vw;
+
+
+}
+.a020 {
+
+	font-family:'Montserrat', sans-serif;
+
+	position: relative;
+	top: 410px;
+	left:20vw;
+
+
+}
