@@ -85,24 +85,6 @@
 	top: 450px;
 	
 	}
-	/*
-	p{
-	
-	position:relative;
-	top: 450px;
-	font-family:'Montserrat', sans-serif;
-	
-	width:60%;
-	height: 60%;
-	
-	font: size 62px;
-	
-	margin: 0 auto;
-	
-	text-align:left;
-	
-}
-*/
 	.line{
 	
 	width: 60%;
@@ -133,6 +115,7 @@
 		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: center;
+		text-decoration: none;
 		flex-direction: column;
 		
 		}
