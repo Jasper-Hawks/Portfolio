@@ -123,38 +123,35 @@
 		font-size: 8vw;
 		z-index: 1;
 		}
+		p{
 
-		img{
-
-			
-		position: absolute;
-		top: 20%;
-		left:20%;
-		max-width:20%;
-		height:auto;
-		z-index:-2;
-
+			position: relative;
+			top: 300px;
+			left: 20%;
+	
+			margin-right: 40%;
+	
+			font-family:'Montserrat', sans-serif;
+	
+			font-size: 2vw;
+	
+	
 		}
-
-	}
-
-	img{
-
-		position: absolute;;
-		left:20%;
-		top:70%;
-		max-width:20%;
-		height:auto;
-		z-index:-2;
+		hr{
+	
+			position:relative;
+			top: 300px;
+			
+			}
 
 	}
 	p{
 
 		position: relative;
 		bottom: 80%;
-		left: 45%;
+		left: 20%;
 
-		margin-right: 65%;
+		margin-right: 40%;
 
 		font-family:'Montserrat', sans-serif;
 
