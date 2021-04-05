@@ -204,7 +204,7 @@
 	transition: max-height 0.4s; 
 	max-height: 0;
 	border: black ;
-	padding-right: 30%;
+	padding-right: 10%;
 	border-style: solid;
 	border-width: .1px;
   }
