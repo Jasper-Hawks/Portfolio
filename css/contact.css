@@ -61,11 +61,11 @@
 	}
 	ul li a{
 	
-	color:white;
-	padding: 10px 200px;
-	text-decoration: none;
-	font-family:'Montserrat', sans-serif;
-	
+		color:white;
+		padding: 10px 100px;
+		text-decoration: none;
+		font-family:'Montserrat', sans-serif;
+		
 	}
 	ul li a:hover{
 	

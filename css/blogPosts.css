@@ -1,0 +1,156 @@
+.html { 
+	
+	margin-left: calc(100vw - 100%); 
+	
+	}
+	
+	.title{
+	z-index: -100;
+	
+	animation:fadeIn 2s;
+	
+	font-family:'Montserrat', sans-serif;
+	
+	width:60%;
+	
+	position: relative;
+	top:300px;
+	
+	font-size: 60px;
+	
+	margin: 0 auto;
+	
+	}
+	
+	@keyframes fadeIn{
+	
+		from{
+	
+		opacity: 0;
+	
+		}	
+		
+		to{
+		
+		opacity: 1;
+		
+		}
+		
+	}
+	ul{
+	
+	list-style-type: none;
+ 	margin: -8px;
+  	padding: 10px;
+	background-color: #383838;
+	color: white;
+	
+	}
+	ul li{
+		
+	display: inline;
+	text-align:center;
+
+	}
+	.container0{
+	
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	}
+	ul li a{
+	
+	color:white;
+	padding: 10px 100px;
+	text-decoration: none;
+	font-family:'Montserrat', sans-serif;
+	
+	}
+	ul li a:hover{
+	
+	color:black;
+	padding: 10px 200px;
+	text-decoration: none;
+	font-family:'Montserrat', sans-serif;
+	background-color: white;
+		
+	}
+
+	p{
+	
+	margin-right: 20%;
+    margin-left: 20%;
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    word-spacing: 5px;
+    justify-content: center;
+    
+		
+	}
+	.line{
+	
+	width: 60%;
+	z-index: -1;
+	
+	}
+	@media screen and (max-width: 1375px){
+
+		ul li{
+		
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		
+		
+		}
+		ul li a:hover{
+	
+		color:black;
+		padding: 10px 200px;
+		text-decoration: none;
+		font-family:'Montserrat', sans-serif;
+		background-color: white;
+		
+	
+		}
+		.welcome{
+
+		font-size: 8vw;
+		z-index: 1;
+		}
+        p{
+
+            margin-right: 20%;
+            margin-left: 20%;
+            font-family:'Montserrat', sans-serif;
+            font-size: 2vw;
+            word-spacing: 2px;
+            justify-content: center;
+            
+        }
+
+	}
+    h2{
+
+        font-family:'Montserrat', sans-serif;
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+
+    }
+    .page-content{
+
+
+        position:relative;
+        top: 450px;
+
+    }
+    #follow{
+
+        text-align: center;
+        padding-bottom: 5%;
+
+    }
