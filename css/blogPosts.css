@@ -82,7 +82,7 @@
 	margin-right: 20%;
     margin-left: 20%;
     font-family:'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 1.2vw;
     word-spacing: 5px;
     justify-content: center;
     
@@ -154,3 +154,12 @@
         padding-bottom: 5%;
 
     }
+	#date{
+
+        font-family:'Montserrat', sans-serif;
+		position: relative;
+		font-size: 1.6vw;
+		left: 20%;
+
+
+	}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../css/blogPosts.css">
+<title>Completion of the Calculator | Jasper Hawks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class = "container0">
+		<ul>	
+		<li><a href = "../index.html">Home</a></li>
+		<li><a href = "../works.html">Works</a></li>
+		<li><a href = "../blog.html">Blog</a></li> 
+		<li><a href = "../contact.html">Contact</a></li>
+		<li><a href = "../about.html">About</a></li>
+		</ul>
+	</div>
+
+    <h1 class = "title">An Introduction to Pysistant</h1>
+    <div class = "page-content">
+    <h3 id = "date">6/22/2021</h3>
+	<hr class = "line"></hr>
+    <p>The Calculator portion of the Pysistant has been completed. The issues, features, and more are listed below.
+        </p>
+
+    <h2>Problems and Solutions</h2>
+    <p>I created a Scientific Calculator for Pysistant since I constantly find myself wanting to use parenthesis in my equations. 
+        This came with many problems that I would have to face, including somehow trying to find the innermost set of parenthesis and
+        prioritizing those over other sets of parenthesis. <br><br>
+        My solution to this problem was to have the program find the first right parenthesis. If you take this equation: ((2 + 2)* 3) + 4
+        You would solve the equation (2 + 2) first since the parenthesis are the innermost, these innermost equations are always paired with
+        the first occurrence of a ). So we can have the program scan for the first occurrence of a ) and evaluate the equation accordingly.
+        This is done in the logic function and is repeated until we have gone through the entire equation and have eliminated all parenthesis.
+        <br><br>
+        Other problems I ran into were evaluating equations with the order of operations. This was a mores straightforward problem, similar to 
+        the one mentioned above where we go through the loop first checking for exponents then multiplication until we finally reach subtraction.
+        This is done with the calc function.  
+    </p>
+    
+    <p id = "follow">Follow the development of Pysistant here or on <a href = "https://github.com/Jasper-Hawks">Github</a><br>This blog post is tagged: <a href="Pysistant.html">Pysistant.
+    </p>
+    </div>
+</body>
+</html>
