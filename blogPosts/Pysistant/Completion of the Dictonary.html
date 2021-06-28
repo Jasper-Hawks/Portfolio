@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../../css/blogPosts.css">
+<title>Completion of the Dictionary | Jasper Hawks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class = "container0">
+		<ul>
+		<li><a href = "../../index.html">Home</a></li>
+		<li><a href = "../../works.html">Works</a></li>
+		<li><a href = "../../blog.html">Blog</a></li>
+		<li><a href = "../../contact.html">Contact</a></li>
+		<li><a href = "../../about.html">About</a></li>
+		</ul>
+	</div>
+
+    <h1 class = "title">Completion of the Dictionary</h1>
+    <div class = "page-content">
+    <h3 id = "date">6/23/2021</h3>
+	<hr class = "line"></hr>
+    <p>The Dictionary portion of the Pysistant has been completed. The issues, features, and more are listed below.
+        </p>
+
+    <h2>Problems and Solutions</h2>
+    <p>I have added a Dictionary to Pysistant by using a combination of the <a href="https://docs.python-requests.org/en/master/index.html">Requests library</a>,
+        <a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup 4</a> and Regex to scrape definitions from
+        <a href="https://wordnet.princeton.edu/">WordNet</a>. <br><br>
+
+        The implementation of a Dictionary proved to be a simple task to program. The majority of the issues I ran into were of my own creation,
+        due to the amount of features Beautiful Soup 4 and finding a website that was simple enough to scrape but also had the definitions that I
+        wanted. 
+        <br><br>
+        The amount of features that Beautiful Soup 4 supports had me scraping the documentation for how I should tackle scraping websites for information.
+        After a few days of reading the documentation and watching videos on the library itself I learned about the find_all method and how to use a loop
+        in order to return the information that I wanted to pull from the site. But I still needed a website in order to put this theory into practice.
+        <br><br>
+        Finding a website that was simple enough to scrape but also had the definitions that I needed proved to be a difficult and unique challenge. I
+        immediately looked towards larger sites like Merriam-Webster and Dictionary.com but their layouts proved to be either too complex or bloated to
+        scrape efficiently. I looked further and eventually found WordNet. With it's simple design and even simpler HTML I could finally get to work on
+        scraping definitions from the site.
+        <br><br>
+        And with a bit of Regex I was able to scrape WordNet for definitions to words based on user input. The majority of the challenge for this project
+        proved to be outside the IDE and led to a resource who's minimalist design triumphed over their more convoluted counterparts.
+    </p>
+
+    <p id = "follow">Follow the development of Pysistant here or on <a href = "https://github.com/Jasper-Hawks">Github</a><br>This blog post is tagged: <a href="Pysistant.html">Pysistant.
+    </p>
+    </div>
+</body>
+</html>
