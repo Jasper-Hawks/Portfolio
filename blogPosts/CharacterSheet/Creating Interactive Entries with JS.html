@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel="Stylesheet" type="text/css" href="../../css/blogPosts.css">
+        <title>Creating Interactive Entries with JS | Jasper Hawks</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="My process on creating interactive character sheets with JS">
+        <meta name="robots" content="index, follow">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+        <div class="container0">
+                <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../works.html">Works</a></li>
+                        <li><a href="../../blog.html">Blog</a></li>
+                        <li><a href="../../contact.html">Contact</a></li>
+                        <li><a href="../../about.html">About</a></li>
+                </ul>
+        </div>
+
+        <h1 class="title">Creating Interactive Entries with JS</h1>
+        <div class="page-content">
+                <h3 id="date">4/12/2022</h3>
+                <hr class="line">
+                </hr>
+                <p>
+                        When I first started creating The Pathfinder Character Sheet I knew that I
+                        would have to find a way to dynamically add and remove entries of spells, items,
+                        and weapons, from the sheet on the fly. I knew a small amount of JavaScript
+                        but wasn't experienced enough to know the most efficient way of tackling this
+                        problem. Nevertheless, I began my search on how to remove and create elements to a
+                        web page dynamically.
+                        <br><br> To start let's look at a webpage in its simplest form. Right now you are reading
+                        text that is contained within a paragraph element. This paragraph element has rules
+                        that dictate how it should look and interact with the web page. This paragraph element
+                        and this text were placed here by me and rendered using the rules for paragraphs but
+                        can not be changed dynamically unless we use a programming language that your browser
+                        is familiar with. That being JavaScript.
+                        <br><br> JavaScript is a programming language that the majority of the Web uses on their
+                        websites.
+                        The purpose of JavaScript is mainly to inject some intractability into a site or to achieve
+                        effects that wouldn't normally be capable with stock HTML & CSS. Our purposes will make
+                        use of the former.
+                        <br><br> To outline what we need to accomplish:
+                        * We need to find out how to create HTML elements with the click of a button
+                        * We also need to find out how to remove HTML elements with the click of a button
+                        <br><br> This is the perfect job for JavaScript because JS has the capability to
+                        interact directly with the webpage in real time. Making it so that these
+                        objectives are possible with enough JavaScript know-how. So I did what any
+                        programmer does when they don't know how to tackle a challenge and typed
+                        my problem into my search engine of choice.
+                        <br><br> Out of the countless Stack Overflow and w3 articles came the first prototype
+                        of the spawnWeap function:
+                        <br><br>
+                <pre>
+                function spawnWeap(){
+                    
+                    // Create a clone of an element with class weapons
+                    let entry = document.querySelector(".weapons").cloneNode(true);
+                    
+                    //Increment the class by one
+                    entry.setAttribute('class',"weapons" + i);
+
+                    // then append it to the left column, the bottom of the weapons section
+                    document.querySelector(".leftColumn").appendChild(entry);
+                    
+                    //Increment i by one
+                    i++;
+              
+                  }
+            </pre>
+                <p>
+                        This code creates an entry for the different weapons you can equip on your
+                        Pathfinder character. But we run into a problem. This only works if there is
+                        an original weapon entry that can never be deleted. It also updates an arbitrary
+                        ID that never gets used in the rest of the site. This made it so that the original
+                        entry with which ever other entry was copied from could never be deleted, and each
+                        subsequent entry was a copy of the original including the values that the original
+                        held. Nevertheless, this demonstrated the concept quite succinctly.
+                        <br><br> My first thought was to somehow hold an entries HTML inside a JavaScript variable
+                        that could then be deployed at any time. The problem came with the IDs as I could
+                        never find a way to update the ID while representing an entry with raw HTML. That
+                        is when I dropped the IDs entirely and started to come at this problem from a different
+                        angle. Without the constraints of the IDs I was free to enact my plan of using raw
+                        HTML appended to containers. As you can see in the JS below:
+                        <br><br>
+                </p>
+
+                <pre>
+
+                function spawnWeap(){
+
+                    // Create a clone of an element with class weapons
+                    // set it's class attribute
+                    // then append it to the bottom of the weapons section 
+                    
+                    var weap = document.querySelector(".weaponsScroll");
+                    var attach = document.createElement('div');
+                    attach.innerHTML = (HTML REPRESENTING BLANK WEAPON ENTRY);
+                    weap.appendChild(attach);
+    
+                }
+
+                </pre>
+                <p>
+                        This method frees us from copying an original entry and appending it to a container. We
+                        instead use JS to write to the webpage as if we were developing it. It's great that we
+                        can create entries now, but we also have to implement the opposite of creation, deletion.
+                        <br><br> My original plan was to implement a garbage button on top of all the entries to delete
+                        them one by one. This was the JS for it.
+                        <br><br>
+                </p>
+                <pre>
+            function delWeap(ele){
+
+                // Select the parent element and not just the delete button
+                let entry = ele.parentElement.parentElement;
+                
+                if (entry.id != "w0"){
+          
+                  entry.remove();
+          
+                }else{
+          
+                  // Display some text 
+                }
+                console.log("deleted");
+            }
+        </pre>
+                </p>
+
+                <p>The problem came when it was time to design something like gear. Since characters will
+                        usually have, tens if not hundreds of items it isn't practical to have a delete button for
+                        every entry, plus it's just plain ugly and clutters up the site. This is where check boxes
+                        come in.
+                        <br><br> In JavaScript, you can compile an array of check boxes with CSS selectors, check the
+                        values
+                        of those check boxes, and implement an action once you have that data. Put a prompt on top
+                        of it all, and you have a way of deleting entries which is practical, familiar, and fast.
+                        <br><br>
+                </p>
+                <pre>
+                function delWeap(ele){
+                        if (confirm("Would you like to delete these abilities?")){
+                
+                                let checks = document.querySelectorAll(".weaponsCheckbox");
+                        
+                                for (let i = 0; i < checks.length; i++){
+                        
+                                        if (checks[i].checked){
+                                
+                                        checks[i].parentElement.parentElement.parentElement.remove()
+                                
+                                        }
+                        
+                                }
+                
+                        }
+                        
+                }
+        </pre>
+                <p>
+                        And that's how you create interactive entries and forms with JavaScript.
+
+                        <br><br> The Pathfinder Character Sheet is nearing completion, designing the functionality of
+                        the
+                        site has been in a prototype phase. Over the next few weeks I will work to polish the site,
+                        polish its functionality, and write blog posts' along the way explaining my thought process
+                        and how I implement certain functions and abilities.
+                        <br><br>
+                </p>
+                <p id="follow">Follow the development of The Pathfinder Character Sheet here or on <a
+                                href="https://github.com/Jasper-Hawks">Github</a><br>This blog post is tagged: <a
+                                href="CharacterSheet.html">The Pathfinder Character Sheet.
+        </div>
+</body>
+
+</html>

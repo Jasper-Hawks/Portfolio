@@ -137,6 +137,13 @@
             justify-content: center;
             
         }
+		pre{
+
+			margin-right: 20%;
+			margin-left: 20%;
+			font-size: 1.8vw;
+	
+		}
 
 	}
     h2{
@@ -167,5 +174,11 @@
 		font-size: 1.6vw;
 		left: 20%;
 
+	}
+	pre{
+
+		margin-right: 20%;
+		margin-left: 20%;
+		font-size: .8vw;
 
 	}
