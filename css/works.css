@@ -58,6 +58,8 @@ body{
 	list-style-type: none;
  	margin: -8px;
   	padding: 10px;
+	width: 100%;
+
 	background-color: #383838;
 	color: white;
 	white-space: nowrap;
@@ -65,8 +67,9 @@ body{
 	}
 	ul li{
 		
-	display: inline;
-	
+	display: inline-block;
+	width: 15%;
+
 	
 	}
 	.container0{ /* menu container*/
@@ -81,7 +84,7 @@ body{
 	ul li a{
 	
 		color:white;
-		padding: 10px 100px;
+		padding: 10px 25%;
 		text-decoration: none;
 		font-family:'Montserrat', sans-serif;
 		
@@ -89,7 +92,7 @@ body{
 	ul li a:hover{
 	
 	color:black;
-	padding: 10px 200px;
+	padding: 10px 25%;
 	text-decoration: none;
 	font-family:'Montserrat', sans-serif;
 	background-color: white;
@@ -125,20 +128,24 @@ body{
 	}
 	@media screen and (max-width: 1375px){
 
+		ul{
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			flex-direction: column;
+
+		}
 		ul li{
 		
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		justify-content: center;
-		text-decoration: none;
-		flex-direction: column;
+			padding: 3% 20%;
 		
 		}
 		ul li a:hover{
-	
+
+		padding: 10% 20%;
 		color:black;
-		padding: 10px 200px;
 		text-decoration: none;
 		font-family:'Montserrat', sans-serif;
 		background-color: white;
@@ -162,7 +169,17 @@ body{
 
 			display: none;
 
-		}	
+		}
+		.title{
+
+			font-size: 10vw;
+	
+		}
+		.container0{
+
+			position:relative;
+	
+		}
 
 		
 	}

@@ -40,41 +40,47 @@
 	ul{
 	
 	list-style-type: none;
- 	margin: -8px;
-  	padding: 10px;
+		margin: -8px;
+		padding: 10px;
+	width: 100%;
+
 	background-color: #383838;
 	color: white;
-	
+	white-space: nowrap;
+
 	}
 	ul li{
 		
-	display: inline;
-	text-align:center;
+	display: inline-block;
+	width: 15%;
 
+	
 	}
-	.container0{
+	.container0{ /* menu container*/
 	
 	text-align: center;
 	position: fixed;
 	z-index: 2;
 	width: 100%;
+	margin: top 10px;
+	z-index: 100;
 	}
 	ul li a{
 	
-	color:white;
-	padding: 10px 100px;
-	text-decoration: none;
-	font-family:'Montserrat', sans-serif;
-	
+		color:white;
+		padding: 10px 25%;
+		text-decoration: none;
+		font-family:'Montserrat', sans-serif;
+		
 	}
 	ul li a:hover{
 	
 	color:black;
-	padding: 10px 200px;
+	padding: 10px 25%;
 	text-decoration: none;
 	font-family:'Montserrat', sans-serif;
 	background-color: white;
-		
+	
 	}
 	hr{
 	
@@ -96,31 +102,43 @@
 	
 	}
 	@media screen and (max-width: 1375px){
+		ul{
 
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			flex-direction: column;
+
+		}
 		ul li{
 		
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		
+			padding: 3% 20%;
 		
 		}
 		ul li a:hover{
-	
+
+		padding: 10% 20%;
 		color:black;
-		padding: 10px 200px;
 		text-decoration: none;
 		font-family:'Montserrat', sans-serif;
 		background-color: white;
-		
 	
 		}
 		.welcome{
 
 		font-size: 8vw;
 		z-index: 1;
+		}
+		.title{
+
+			font-size: 10vw;
+	
+		}
+		.container0{
+
+			position:relative;
+	
 		}
 
 	}
