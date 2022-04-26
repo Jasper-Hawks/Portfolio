@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../../css/blogPosts.css">
+<title>Mobile Responsiveness | Jasper Hawks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="How I tackled mobile responsiveness with The Pathfinder Character Sheet">
+<meta name="robots" content="index, follow">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class = "container0">
+		<ul>	
+		<li><a href = "../../index.html">Home</a></li>
+		<li><a href = "../../works.html">Works</a></li>
+		<li><a href = "../../blog.html">Blog</a></li> 
+		<li><a href = "../../contact.html">Contact</a></li>
+		<li><a href = "../../about.html">About</a></li>
+		</ul>
+	</div>
+
+    <h1 class = "title">Mobile Responsiveness</h1>
+    <div class = "page-content">
+    <h3 id = "date">04/26/2022</h3>
+	<hr class = "line"></hr>
+    <p>
+        The majority of the sites that I've created have used <a href="https://www.w3schools.com/CSSref/css_units.asp">relative units</a>
+        in order for the site to function well on mobile and desktop
+        browsers. You can view these units in effect if you are on a mobile device, or if
+        you simulate it on your desktop.
+        <br><br>
+        The point of all of this is to say that these relative units scale RELATIVE to
+        a specific element of the browser. Whether it's how wide the viewport is in the
+        case of VWs or the length of a certain character (EM). The majority of websites
+        use these in order to scale their websites up and down depending on the size of
+        the screen that you are viewing the site on. Older websites who were made when
+        these units did not exist will just display the site as you would see it on a
+        desktop.
+        <br><br>
+        The text is usually small and links and buttons are usually skewed or appear out of
+        the oridnary. This effect is undesired because on mobile devices smaller text and 
+        elements can cause the user to misclick and strain their eyes. As such relative units
+        are used when the screen gets small enough.
+        <br><br>
+        But what if you would like to have this effect?
+        <br><br>
+        This was the case with The Pathfinder Character Sheet that I am developing. Since this
+        website is a recreation of The Official Character Sheet used by Paizo in digital form
+        why would we scale elements to increase text and element size. If you were viewing a
+        PDF on your phone you would zoom in and pan around, so why not have the same behavior
+        on the site.
+        <br><br>
+        After the screen becomes small enough the width and height of the site are set staticly
+        , and you can navigate the site the same way you would read a document. This allows the 
+        site not to be constrained by relative units scaling to the smallest of screens. It also
+        increases readability as scaling down to screens that small would have text and other
+        elements scale down to the point of having the user zoom in any way. This way I as a developer
+        can do less work and so can the user.
+        <br><br>
+        You can see an example of this behavior<a href="https://pfcharactersheet.netlify.app/">here</a> 
+        <br><br>
+        As you resize the screen eventually the width and height become static and you
+        can pan around the site with the scrollbar.
+        
+    </p>
+    <p id = "follow">Follow the development of The Pathfinder Character Sheet here or on <a href = "https://github.com/Jasper-Hawks">Github</a><br>This blog post is tagged: <a href="CharacterSheet.html">The Pathfinder Character Sheet.
+    </p>
+    </div>
+</body>
+</html>
