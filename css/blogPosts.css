@@ -1,6 +1,7 @@
 .html { 
 	
 	margin-left: calc(100vw - 100%); 
+	font-size: 100%;
 
 }
 
@@ -137,7 +138,7 @@ ul{
 	}
 	.title{
 
-		font-size: 10vw;
+		font-size: 2rem;
 
 	}
 	p{
@@ -159,8 +160,7 @@ ul{
 	}
 	.container0{
 
-		position: absolute;
-		top: 0;
+		position:relative;
 
 	}
 
