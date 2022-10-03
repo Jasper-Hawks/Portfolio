@@ -72,7 +72,7 @@ body{
 
 	
 	}
-	.container0{ /* menu container*/
+	.header{ /* menu container*/
 	
 	text-align: center;
 	position: fixed;
@@ -175,7 +175,7 @@ body{
 			font-size: 10vw;
 	
 		}
-		.container0{
+		.header{
 
 			position:relative;
 	
