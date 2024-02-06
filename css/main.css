@@ -1,144 +1,216 @@
-.html { 
-	
-	margin-left: calc(100vw - 100%); 
-	
-	}
-	
-	.welcome{
-	z-index: -100;
-	
-	animation:fadeIn 2s;
-	
-	font-family:'Montserrat', sans-serif;
-	
-	width:60%;
-	
-	position: relative;
-	top:300px;
-	
-	font-size: 60px;
-	
-	margin: 0 auto;
-	
-	}
-	
-	@keyframes fadeIn{
-	
-		from{
-	
-		opacity: 0;
-	
-		}	
-		
-		to{
-		
-		opacity: 1;
-		
-		}
-		
-	}
-	ul{
-	
-	list-style-type: none;
-		margin: -8px;
-		padding: 10px;
-	width: 100%;
+html{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: white ;
+    width: fit-content;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.splashScreen{
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+hr{
+    margin: 0;
+}
+#logoImg{
+    height:100px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 
-	background-color: #383838;
-	color: white;
-	white-space: nowrap;
+}
+.headerText, h1{
+/*    font-size: 6.5em; */
+    font-size: 6.5vw;
+    margin: 0;
+    color: beige;
+}
+.subheaderText, h2{
+    font-size: 3.5vw;
+    margin: 0;
+    color: beige;
+}
 
-	}
-	ul li{
-		
-	display: inline-block;
-	width: 15%;
+.headerContainer{
+    align-self: center;
+    padding-left: 10%;
+    width: fit-content;
+}
+video{
+    display: block;
+    width: 100%;
+    height: auto; 
+}
+.splashContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    align-items: center;
+}
+.mainContent{
+    height: fit-content;
+}
+.twoToneContainer{
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    align-content: space-around; 
+    justify-content: space-around;
+    gap: 10em 10em;
+    margin-right: 5em;
+    margin-left: 5em;
+}
+.leftTone{
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+p{
+    color: black;
 
-	
-	}
-	.header{ /* menu container*/
-	
-	text-align: center;
-	position: fixed;
-	z-index: 2;
-	width: 100%;
-	margin: top 10px;
-	z-index: 100;
-	}
-	ul li a{
-	
-		color:white;
-		padding: 10px 25%;
-		text-decoration: none;
-		font-family:'Montserrat', sans-serif;
-		
-	}
-	ul li a:hover{
-	
-	color:black;
-	padding: 10px 25%;
-	text-decoration: none;
-	font-family:'Montserrat', sans-serif;
-	background-color: white;
-	
-	}
-	hr{
-	
-	position:relative;
-	top: 450px;
-	
-	}
-	p{
-	
-	position:relative;
-	top: 500px;
-	height: 1000px;
-		
-	}
-	.line{
-	
-	width: 60%;
-	z-index: -1;
-	
-	}
-	@media screen and (max-width: 1375px){
-		ul{
+}
+.rightTone{
+    background-color: black;
+/*    margin-left: 20em; */
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-width: 40%;
+    height: fit-content;
+}
+img{
+    width: 100%;
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-decoration: none;
-			flex-direction: column;
+}
+#rockClimbingPhoto{
+    position: relative;
+    min-width: 300px;
+    bottom: -15px; 
+    left: 10px;
+}
+.rightToneTextCont{
+    background-color: white;
+    position: relative;
+    top: -10px; 
+    right: 10px;
+    padding: 10px;
+    font-size: 1.2vw;
+    border: 2px solid;
 
-		}
-		ul li{
-		
-			padding: 3% 20%;
-		
-		}
-		ul li a:hover{
+}
+h3{
+    margin: 0;
+}
+footer{
+    background-color: #202020;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.footerHeader{
+    font-size: 2vw;
+}
+.footerTextContent{
+    color: beige;
+    padding-left: 8em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 
-		padding: 10% 20%;
-		color:black;
-		text-decoration: none;
-		font-family:'Montserrat', sans-serif;
-		background-color: white;
-	
-		}
-		.welcome{
+}
+ul{
+    list-style-type: none;
+    margin: 0;
 
-		font-size: 8vw;
-		z-index: 1;
-		}
-		.title{
+}
+.splashOverlayCont{
 
-			font-size: 10vw;
-	
-		}
-		.header{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.splashOverlayCont::before{
+    /* This is for the black overlay on the video*/
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-			position:relative;
-	
-		}
+}
 
-	}
+nav{
+    background-color: #202020;
+    display:flex;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 1000;
+}
+.hamburgerCont{
+    display:block;
+
+    width: fit-content;
+    padding-left: 10px;
+}
+.hamburgerLine{
+  width: 35px;
+  height: 5px;
+  background-color: beige;
+  margin: 6px 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity:  0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity:  1;
+    transform: translateY(0);
+  }
+}
+
+.titlesUL li {
+  opacity:  0; /* Start with items invisible */
+  transform: translateY(20px); /* Move items slightly down */
+  transition: opacity  0.5s, transform  0.5s; /* Transition effects */
+}
+
+/* Stagger the animations using :nth-child */
+.titlesUL li:nth-child(1) {
+  animation: fadeInUp  0.5s  0s forwards; /* No delay for the first item */
+}
+
+.titlesUL li:nth-child(2) {
+  animation: fadeInUp  0.5s  0.5s forwards; /* Delay for the second item */
+}
+
+.titlesUL li:nth-child(3) {
+  animation: fadeInUp  0.5s  1s forwards; /* Delay for the third item */
+}
+
+.titlesUL li:nth-child(4) {
+  animation: fadeInUp  1s  1.5s forwards; /* Delay for the third item */
+}
