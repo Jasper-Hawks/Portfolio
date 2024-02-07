@@ -16,18 +16,21 @@
 </head>
 <body>	
     <nav>
-      <div class="hamburgerCont">
+      <button class="hamburgerCont">
 	<div class="hamburgerLine"></div>
 	<div class="hamburgerLine"></div>
 	<div class="hamburgerLine"></div>
-      </div>
+      </button>
       <img id="logoImg" src="images/JHLogoMini.jpg">
-	<ul style="display: none;">
-	    <li><a href="home.html">Home</a></li>
-	    <li><a href="about.html">About</a></li>
-	    <li><a href="contact.html">Contact</a></li>
-	</ul>
     </nav>
+    <div class="linkListCont slide-out">
+	<ul class="linkList">
+	    <li class="linkLi"><a class="link" href="index.html">Home</a></li>
+	    <li class="linkLi"><a class="link" href="blog.html">Blog</a></li>
+	    <li class="linkLi"><a class="link" href="about.html">About</a></li>
+	    <li class="linkLi"><a class="link" href="contact.html">Contact</a></li>
+	</ul>
+    </div>
 	<div class="splashOverlayCont">
 	    <video style="background-color: white;" src="images/output.mp4" autoplay muted loop>
 	    Your browser does not support HTML5 video.
@@ -39,6 +42,7 @@
 		  <ul class="titlesUL">
 		    <li class="titles"><h2 class="subheaderText">Software Developer</h2></li>
 		    <li class="titles"><h2 class="subheaderText">Rock Climber</h2></li>
+		    <li class="titles"><h2 class="subheaderText">Full Stack Developer</h2></li>
 		    <li class="titles"><h2 class="subheaderText">Tea Drinker</h2></li>
 		    <li class="titles"><h2 class="subheaderText">Book Reader</h2></li>
 		  </ul>
@@ -64,10 +68,11 @@
 	    </div>
 	    <div class="rightTone">
 	      <div class="rightToneTextCont" >
-	      <h2 style="color: black;">My Philosiphy</h2>
+	      <h2 style="color: black;">About Me</h2>
 	      <p>
-		(REWRITE & SPELLCHECK THIS) <strong>Do it Right The
-		First Time</strong> It is in my experience over years
+		(REWRITE & SPELLCHECK THIS)
+		<strong>Since the age of 12</strong>
+		It is in my experience over years
 		as a Software Developer that codebases tend toward the
 		bloated and unruly. This is usually the
 		consequence of workplace deadlines, and quick
@@ -125,5 +130,35 @@
 	    This website was written by Jasper Hawks and is licensed under the GPL 3.
 	  </div>
 	</footer>
+
+
+    <script>
+	document.querySelector('.hamburgerCont').addEventListener('click', function() {
+
+//	let arr = document.querySelector('.linkListCont').classList);
+	if(document.querySelector('.linkListCont').classList.contains("slide-out")){
+        	document.querySelector('.linkListCont').classList.add('slide-in');
+        	document.querySelector('.linkListCont').classList.remove('slide-out');
+
+	}else{
+
+	    document.querySelector('.linkListCont').classList.remove('slide-in');
+	    document.querySelector('.linkListCont').classList.add('slide-out');
+	}
+//	    console.log(document.querySelector('.linkList').style.display);
+////////    let linkCont = document.querySelector('.linkListCont');
+////////    if (document.querySelector('.linkListCont').style.display == "none" ){
+////////	document.querySelector('.linkListCont').style.display = "flex";
+////////	document.querySelector('.linkListCont').classList.add('slide-in');
+////////	document.querySelector('.linkListCont').classList.remove('slide-out');
+
+////////    }else{
+
+////////	document.querySelector('.linkListCont').classList.remove('slide-in');
+////////	document.querySelector('.linkListCont').classList.add('slide-out');
+////////	document.querySelector('.linkListCont').style.display = "none";
+////////    } 
+	});
+    </script>
 </body>
 </html>

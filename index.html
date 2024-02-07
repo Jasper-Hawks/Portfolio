@@ -15,19 +15,41 @@
 <link href="css/main.css" rel="stylesheet">
 </head>
 <body>	
-<!--  <div class="testDiv"> -->
-	<div class="testDiv">
+    <nav>
+      <button class="hamburgerCont">
+	<div class="hamburgerLine"></div>
+	<div class="hamburgerLine"></div>
+	<div class="hamburgerLine"></div>
+      </button>
+      <img id="logoImg" src="images/JHLogoMini.jpg">
+    </nav>
+    <div class="linkListCont slide-out">
+	<ul class="linkList">
+	    <li class="linkLi"><a class="link" href="index.html">Home</a></li>
+	    <li class="linkLi"><a class="link" href="blog.html">Blog</a></li>
+	    <li class="linkLi"><a class="link" href="about.html">About</a></li>
+	    <li class="linkLi"><a class="link" href="contact.html">Contact</a></li>
+	</ul>
+    </div>
+	<div class="splashOverlayCont">
 	    <video style="background-color: white;" src="images/output.mp4" autoplay muted loop>
 	    Your browser does not support HTML5 video.
 	    </video>
-	<div style="" class="splashContainer">
+	    <div class="splashContainer">
 		<div class="splashScreen">
 		<div class="headerContainer">
-		    <h1 class="headerText">Jasper Hawks</h1><hr><br><h2 class="subheaderText">Software Dev</h2>
+		  <h1 class="headerText">Jasper Hawks</h1><hr><br>
+		  <ul class="titlesUL">
+		    <li class="titles"><h2 class="subheaderText">Software Developer</h2></li>
+		    <li class="titles"><h2 class="subheaderText">Rock Climber</h2></li>
+		    <li class="titles"><h2 class="subheaderText">Full Stack Developer</h2></li>
+		    <li class="titles"><h2 class="subheaderText">Tea Drinker</h2></li>
+		    <li class="titles"><h2 class="subheaderText">Book Reader</h2></li>
+		  </ul>
 		</div>
-		</div>
-	    </div>
+	    </div> 
 	</div>
+    </div>
 
   <div style="display: none;"class="splashContainer">
 	<div class="splashScreen">
@@ -36,22 +58,21 @@
 	  </div>
 	</div>
     </div>
-<!--    </div> -->
 
 	<div class="mainContent">
 	  <div class="twoToneContainer">
 	    <div class="leftTone">
-	      <!-- <div class="cropped"></div> -->
 		<img id="rockClimbingPhoto" src="https://drive.google.com/thumbnail?id=1--U9lRIvkY1gELjqb4x93XLE--tn6XzJ&sz=w1000">
 
 	      <!-- https://drive.google.com/thumbnail?id=0B6wwyazyzml-OGQ3VUo0Z2thdmc&sz=w1000 -->
 	    </div>
 	    <div class="rightTone">
 	      <div class="rightToneTextCont" >
-	      <h2 style="color: black;">My Philosiphy</h2>
+	      <h2 style="color: black;">About Me</h2>
 	      <p>
-		(REWRITE & SPELLCHECK THIS) <strong>Do it Right The
-		First Time</strong> It is in my experience over years
+		(REWRITE & SPELLCHECK THIS)
+		<strong>Since the age of 12</strong>
+		It is in my experience over years
 		as a Software Developer that codebases tend toward the
 		bloated and unruly. This is usually the
 		consequence of workplace deadlines, and quick
@@ -101,11 +122,43 @@
 	    <h3 class="footerHeader">Jasper Hawks</h3>
 	    <ul>
 	      <li><a href="blog.html">Blog</a></li>
+	<li><a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy</a></li>
+
 	      <li><a>Social</a></li>
 	      <li><a>Work</a></li>
 	    </ul>
 	    This website was written by Jasper Hawks and is licensed under the GPL 3.
 	  </div>
 	</footer>
+
+
+    <script>
+	document.querySelector('.hamburgerCont').addEventListener('click', function() {
+
+//	let arr = document.querySelector('.linkListCont').classList);
+	if(document.querySelector('.linkListCont').classList.contains("slide-out")){
+        	document.querySelector('.linkListCont').classList.add('slide-in');
+        	document.querySelector('.linkListCont').classList.remove('slide-out');
+
+	}else{
+
+	    document.querySelector('.linkListCont').classList.remove('slide-in');
+	    document.querySelector('.linkListCont').classList.add('slide-out');
+	}
+//	    console.log(document.querySelector('.linkList').style.display);
+////////    let linkCont = document.querySelector('.linkListCont');
+////////    if (document.querySelector('.linkListCont').style.display == "none" ){
+////////	document.querySelector('.linkListCont').style.display = "flex";
+////////	document.querySelector('.linkListCont').classList.add('slide-in');
+////////	document.querySelector('.linkListCont').classList.remove('slide-out');
+
+////////    }else{
+
+////////	document.querySelector('.linkListCont').classList.remove('slide-in');
+////////	document.querySelector('.linkListCont').classList.add('slide-out');
+////////	document.querySelector('.linkListCont').style.display = "none";
+////////    } 
+	});
+    </script>
 </body>
 </html>

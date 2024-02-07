@@ -18,15 +18,19 @@ body{
     height: 100%;
     
 }
+a{
+    color: #87CEEB;
+}
 hr{
     margin: 0;
 }
 #logoImg{
-    height:100px;
+    height:45px;
     width: auto;
-    margin-left: auto;
-    margin-right: auto;
-
+    position: absolute;
+    top: 2px;
+    left:  50%; /* Moves the child to the middle of the parent */
+  transform: translateX(-50%); /* Shifts the child back by half of its width */
 }
 .headerText, h1{
 /*    font-size: 6.5em; */
@@ -169,8 +173,9 @@ nav{
     z-index: 1000;
 }
 .hamburgerCont{
+    background-color: rgba(0,0,0,0);
+    border: none;
     display:block;
-
     width: fit-content;
     padding-left: 10px;
 }
@@ -180,7 +185,38 @@ nav{
   background-color: beige;
   margin: 6px 0;
 }
+.link{
+    font-size: 3vw;
+    text-align: center;
+}
+.linkLi{
+    width: 100%;
+    text-align: center;
 
+}
+.linkList{
+/*    position: relative;
+    top: 50px; 
+    padding-top: 0; */
+
+ position: absolute;
+    top:  50%; /* Position at  50% from the top */
+    transform: translateY(-50%); /* Move up by half the child's own height */
+
+    margin:auto;
+    text-align: center;
+}
+.linkListCont{
+    display: flex;
+    height: 101vh;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    background-color: rgba(32,32,32,0.8);
+    z-index: 100;
+
+}
 @keyframes fadeInUp {
   from {
     opacity:  0;
@@ -213,4 +249,51 @@ nav{
 
 .titlesUL li:nth-child(4) {
   animation: fadeInUp  1s  1.5s forwards; /* Delay for the third item */
+}
+.titlesUL li:nth-child(5) {
+  animation: fadeInUp  1.5s  2s forwards; /* Delay for the third item */
+}
+/*
+@keyframes slide-in {
+   0% {
+    max-width:  0;
+    opacity:  0;
+  }
+   100% {
+    max-width:  30%;
+    opacity:  1;
+  }
+}
+
+.slide-in {
+  animation-name: slide-in;
+  animation-duration:  0.5s; /* Adjust the duration as needed 
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.slide-out {
+  animation-name: slide-in;
+  animation-duration:  0.5s; /* Adjust the duration as needed 
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+}
+*/
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Slide-out animation */
+@keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+.slide-in{
+
+    animation: slideIn 1s forwards;
+}
+.slide-out{
+
+    animation: slideOut 1s forwards;
 }
