@@ -27,8 +27,10 @@
 	<ul class="linkList">
 	    <li class="linkLi"><a class="link" href="index.html">Home</a></li>
 	    <li class="linkLi"><a class="link" href="blog.html">Blog</a></li>
+	    <li class="linkLi"><a class="link" href="works.html">Projects</a></li>
+	    <li class="linkLi"><a class="link" href="experience.html">Resume</a></li>
+	    <li class="linkLi"><a class="link" href="social.html">Socials</a></li>
 	    <li class="linkLi"><a class="link" href="about.html">About</a></li>
-	    <li class="linkLi"><a class="link" href="contact.html">Contact</a></li>
 	</ul>
     </div>
 	<div class="splashOverlayCont">
@@ -70,46 +72,41 @@
 	      <div class="rightToneTextCont" >
 	      <h2 style="color: black;">About Me</h2>
 	      <p>
-		(REWRITE & SPELLCHECK THIS)
-		<strong>Since the age of 12</strong>
-		It is in my experience over years
-		as a Software Developer that codebases tend toward the
-		bloated and unruly. This is usually the
-		consequence of workplace deadlines, and quick
-		turnarounds. While we are all prone to the desires
-		of upper management or our own timelines, bugs can
-		start to baloon and it's only a matter of time before
-		it goes pop.
+		(REWRITE & SPELLCHECK THIS)<br>
+		<strong>Since the age of 11</strong>
+		I've had a hands on approach to computer science. From
+		11-13 I used resources such as
+		MIT's <a href="https://scratch.mit.edu/users/thagod72/">Scratch</a>
+		or Khan
+		Academy's <a href="https://www.khanacademy.org/profile/Thagod72">Computer
+		Proramming/Science courses</a>. In high school I
+		enrolled in Java classes and developed a rudimentary
+		text based game. Today I stand on the
+		foundation of my adolescence as a software developer
+		with intimate knowledge of web and software
+		technologies that have propelled me to working in <strong>large
+		enterprise environments managing mission critical software</strong>.
+
+		<h3>My Philosiphy</h3>
+		<strong>Simple, Extensible, Efficent.</strong> Simple
+		code is easy to read and explain to those who have no
+		familiarity with the codebase or computer science
+		itself. Extensible code is written with the idea
+		that bugs and features aren't a matter of if but
+		when. Efficent Code leverages as little resources as
+		possible for speed.
+		<br><br>  
+		<h3>My Blog</h3>
+		My Blog is a place where I write about projects I'm
+		working on, clever solutions I've found or general
+		thoughts I have on Comp Sci or other unrelated issues.
 		<br><br>
-		The tenets I've listed below are those that I follow
-		in order to avoid the baloon bug.
-		<h3>Simple Solutions</h3>
-		Simple code is readable, maintainable, and easy to explain. 
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-		minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-		aliquip ex ea commodo consequat. Duis aute irure dolor in
-		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-		pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-		culpa qui officia deserunt mollit anim id est laborum.
-		<br><br>
-		<h3>Extensible Design</h3>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-		minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-		aliquip ex ea commodo consequat. Duis aute irure dolor in
-		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-		pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-		culpa qui officia deserunt mollit anim id est laborum.
-		<br><br>
-		<h3>Efficent Code</h3>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-		minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-		aliquip ex ea commodo consequat. Duis aute irure dolor in
-		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-		pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-		culpa qui officia deserunt mollit anim id est laborum.
+		<h3>Other Interests</h3>
+		I'm an avid hiker and rock climber, travelling around
+		the country to find trails and rocks. I dabble with
+		arduinos and other microcontrollers. I read mostly
+		history, comp sci, and philosiphy books and I collect
+		aged <a href="https://en.wikipedia.org/wiki/Gongfu_tea">chinese teas</a>.
 	      </p>
 	      </div> 
 	    </div>
@@ -122,20 +119,18 @@
 	    <h3 class="footerHeader">Jasper Hawks</h3>
 	    <ul>
 	      <li><a href="blog.html">Blog</a></li>
-	<li><a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy</a></li>
-
+	    <li><a href="blog.html">Work</a></li>
+	    <li><a href="blog.html">Experience</a></li>
 	      <li><a>Social</a></li>
-	      <li><a>Work</a></li>
+	    <li><a href="about.html">About</a></li>
 	    </ul>
-	    This website was written by Jasper Hawks and is licensed under the GPL 3.
+	    This website was written by Jasper Hawks and is licensed under the GPL 3. Logo: <a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy</a>
 	  </div>
 	</footer>
 
 
     <script>
 	document.querySelector('.hamburgerCont').addEventListener('click', function() {
-
-//	let arr = document.querySelector('.linkListCont').classList);
 	if(document.querySelector('.linkListCont').classList.contains("slide-out")){
         	document.querySelector('.linkListCont').classList.add('slide-in');
         	document.querySelector('.linkListCont').classList.remove('slide-out');
@@ -145,19 +140,6 @@
 	    document.querySelector('.linkListCont').classList.remove('slide-in');
 	    document.querySelector('.linkListCont').classList.add('slide-out');
 	}
-//	    console.log(document.querySelector('.linkList').style.display);
-////////    let linkCont = document.querySelector('.linkListCont');
-////////    if (document.querySelector('.linkListCont').style.display == "none" ){
-////////	document.querySelector('.linkListCont').style.display = "flex";
-////////	document.querySelector('.linkListCont').classList.add('slide-in');
-////////	document.querySelector('.linkListCont').classList.remove('slide-out');
-
-////////    }else{
-
-////////	document.querySelector('.linkListCont').classList.remove('slide-in');
-////////	document.querySelector('.linkListCont').classList.add('slide-out');
-////////	document.querySelector('.linkListCont').style.display = "none";
-////////    } 
 	});
     </script>
 </body>

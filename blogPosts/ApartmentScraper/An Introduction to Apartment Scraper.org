@@ -1,0 +1,131 @@
+#+TITLE: An Introduction to Apartment Scraper | Jasper Hawks
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+#+HTML_HEAD: <link rel="preconnect" href="https://fonts.googleapis.com">
+#+HTML_HEAD: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+#+OPTIONS: html-style:nil
+#+OPTIONS: toc:nil
+#+OPTIONS: title:nil
+#+OPTIONS: html-postamble:nil
+#+OPTIONS: num:nil
+#+TAGS: @PoopyButt
+
+#+BEGIN_export html
+<nav>
+    <button class="hamburgerCont">
+    <div class="hamburgerLine"></div>
+    <div class="hamburgerLine"></div>
+    <div class="hamburgerLine"></div>
+    </button>
+    <img id="logoImg" src="../../images/JHLogoMini.jpg">
+</nav>
+<div class="linkListCont slide-out">
+    <ul class="linkList">
+	<li class="linkLi"><a class="link" href="../../index.html">Home</a></li>
+	<li class="linkLi"><a class="link" href="../../blog.html">Blog</a></li>
+	<li class="linkLi"><a class="link" href="../../software.html">Software</a></li>
+	<li class="linkLi"><a class="link" href="../../experience.html">Experience</a></li>
+	<li class="linkLi"><a class="link" href="../../social.html">Socials</a></li>
+	<li class="linkLi"><a class="link" href="../../about.html">About</a></li>
+    </ul>
+</div>
+    <div class="splashOverlayCont">
+	<video style="background-color: white;" src="../../images/output.mp4" autoplay muted loop>
+	Your browser does not support HTML5 video.
+	</video>
+	<div class="splashContainer">
+	    <div class="splashScreen">
+	    <div class="headerContainer">
+		<h1 class="headerText">Jasper Hawks</h1><hr><br>
+		<ul class="titlesUL">
+#+END_export 
+#+BEGIN_export html
+		<li class="titles"><h2 class="subheaderText">
+#+END_export 
+** An Introduction to Apartment Scraper
+** 6/29/2021
+#+BEGIN_export html
+		</h2></li>
+		</ul>
+	    </div>
+	</div> 
+    </div>
+</div>
+<div class="mainContent">
+#+END_export 
+** 
+  :PROPERTIES:
+  :HTML_CONTAINER_CLASS: singlePane
+  :CUSTOM_ID: 
+  :END:
+*** Backstory
+  :PROPERTIES:
+  :HTML_CONTAINER_CLASS: singlePaneText
+  :CUSTOM_ID: 
+  :END:
+A friend and I were talking one morning about plans after high school,
+and during the conversation, they spoke about how they would like to
+find an apartment to call home. However, searching and compiling the
+data on different complexes proved tiring and time-consuming. So, like
+any friend in this situation, I offered to help streamline the process
+by creating an entire application from scratch.
+
+Apartment Scraper scrapes [[https://Apartments.com][Apartments.com]]
+for all listings of Apartments within a given region. The data is then
+printed to a spreadsheet that you can open with your editor of
+choice. I've already created a prototype that holds the basic
+functionality of the entire program and will be expanding upon it to
+support scraping more data such as amenities, square footage, and
+ratings. I hope you learn something by following this application or
+contributing to its development on GitHub.
+
+
+** 
+  :PROPERTIES:
+  :HTML_CONTAINER_CLASS: singlePane
+  :CUSTOM_ID: 
+  :END:
+*** Software/Hardware Used
+  :PROPERTIES:
+  :HTML_CONTAINER_CLASS: singlePaneText
+  :CUSTOM_ID: 
+  :END:
+- [[https://github.com/microsoft/vscode][Virtual Studio Code]] Primary IDE that will use to develop the majority of Apartment Scraper in
+- [[https://www.python.org/][Python 3]] The programming language we will be using to create Apartment Scraper
+- [[https://www.crummy.com/software/BeautifulSoup/][Beautiful Soup 4]] A web scraping library we will use to scrape data from apartment listings
+- [[https://xlwt.readthedocs.io/en/latest/][Xlwt]] A spreadsheet creation library we will use to print data to
+- [[https://docs.python-requests.org/en/master/index.html][Requests]] A library that allows for HTTP requests
+
+#+BEGIN_export html
+</div>
+</div>
+</div>
+    <footer>
+	<div class="footerTextContent">
+	<h3 class="footerHeader">Jasper Hawks</h3>
+	<ul>
+	<li><a href="blog.html">Blog</a></li>
+	<li><a href="software.html">Software</a></li>
+	<li><a href="experience.html">Experience</a></li>
+	<li><a href="social.html">Socials</a></li>
+	<li><a href="about.html">About</a></li>
+	</ul>
+	This website was written by Jasper Hawks and is licensed under the GPL 3. Logo: <a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy</a>
+	</div>
+    </footer>
+    <script>
+	document.querySelector('.hamburgerCont').addEventListener('click', function() {
+	if(document.querySelector('.linkListCont').classList.contains("slide-out")){
+        	document.querySelector('.linkListCont').classList.add('slide-in');
+        	document.querySelector('.linkListCont').classList.remove('slide-out');
+
+	}else{
+
+	    document.querySelector('.linkListCont').classList.remove('slide-in');
+	    document.querySelector('.linkListCont').classList.add('slide-out');
+	}
+	});
+    </script>
+
+
+#+END_export 

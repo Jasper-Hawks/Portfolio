@@ -2,9 +2,14 @@
 <html>
 <head>
 	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link href = "css/works.css" rel = "stylesheet">
+<!--	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href = "css/works.css" rel = "stylesheet"> -->
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link href="css/main.css" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1">
 <meta name="description" content="A list of the projects that Jasper Hawks has created.">
@@ -15,165 +20,151 @@
 
 </head>
 <body>	
-	
-	<div class = "header" onclick="cascadingMenu">
-		<ul>
-		
-		<li><a href = "index.html">Home</a></li>
-		<li><a href = "works.html">Works</a></li>
-		<li><a href = "blog.html">Blog</a></li> 
-		<li><a href = "contact.html">Contact</a></li>
-		<li><a href = "about.html">About</a></li>
-		
-		</ul>
+    <nav>
+      <button class="hamburgerCont">
+	<div class="hamburgerLine"></div>
+	<div class="hamburgerLine"></div>
+	<div class="hamburgerLine"></div>
+      </button>
+      <img id="logoImg" src="images/JHLogoMini.jpg">
+    </nav>
+    <div class="linkListCont slide-out">
+	<ul class="linkList">
+	    <li class="linkLi"><a class="link" href="index.html">Home</a></li>
+	    <li class="linkLi"><a class="link" href="blog.html">Blog</a></li>
+	    <li class="linkLi"><a class="link" href="works.html">Projects</a></li>
+	    <li class="linkLi"><a class="link" href="experience.html">Resume</a></li>
+	    <li class="linkLi"><a class="link" href="social.html">Socials</a></li>
+	    <li class="linkLi"><a class="link" href="about.html">About</a></li>
+	</ul>
+    </div>
+	<div class="splashOverlayCont">
+	    <video style="background-color: white;" src="images/output.mp4" autoplay muted loop>
+	    Your browser does not support HTML5 video.
+	    </video>
+	    <div class="splashContainer">
+		<div class="splashScreen">
+		<div class="headerContainer">
+		  <h1 class="headerText">Jasper Hawks</h1><hr><br>
+		  <ul class="titlesUL">
+		    <li class="titles"><h2 class="subheaderText">Projects</h2></li>
+		  </ul>
+		</div>
+	    </div> 
 	</div>
+    </div>
 	
-		<h1 class = "welcome"> Projects</h1>
-		
-		<hr class = "line"></hr>
-		<h2 class = "year">2022</h2>
-		<div class="tab">
-			<input id="tab-12" type="checkbox" name="tab">
-			<label for="tab-12"> <a href = "https://github.com/Jasper-Hawks/Bash-Assistant">Bash Assistant<img src="images/bash.png"></a> </label>
-				<div class="tab-content">
-					<p>
-					A bash script that completes simple tasks like calculation equations, defining words, managing items on a TODO list and more.<br><br>Materials Used:
-					<br>Neovim<br>Git<br>Bash<br><br>My Role: Design, creation, and testing<br><br>
-					Challenges Faced: Learning the complexities of shell scripting and the exotic syntax. Along with file I/O and learning about environmental variables.<br><br>
-					Read more in my <a href="blogPosts/BashAssistant/BashAssistant.html">blog posts</a> about my projects.
-					</p>
-				</div>
-			</div>
-		<div class="tab">
-			<input id="tab-11" type="checkbox" name="tab">
-			<label for="tab-11"> <a href = "https://github.com/Jasper-Hawks/MetaMusic">MetaMusic<img src="images/py.png"></a> </label>
-				<div class="tab-content">
-					<p>
-					A metadata tag editor that applies metadata to directories and files.<br><br>Materials Used:
-					<br>Neovim<br>Git<br>Python3<br><br>My Role: Layout design, creation, and testing<br><br>
-					Challenges Faced: Unix based file I/O, integration of stdin, and learning the ID3 tagging system<br><br>
-					Read more in my <a href="blogPosts/MetaMusic/MetaMusic.html">blog posts</a> about my projects.
-					</p>
-				</div>
-			</div>
-		<div class="tab">
-			<input id="tab-10" type="checkbox" name="tab">
-			<label for="tab-10"> <a href = "https://github.com/Jasper-Hawks/UnofficialPathfinderCharacterSheet">Pathfinder Character Sheet<img src="images/html5.png"><img src="images/css.png"><img src="images/js.png"></a> </label>
-				<div class="tab-content">
-					<p>
-					A digital character sheet, capable of storing character data and importing/exporting characters to files.<br><br>Materials Used:
-					<br>VS Code<br>Git<br>Stack Overflow<br><br>My Role: Layout design, creation, and testing<br><br>
-					Challenges Faced: Learning and integrating JavaScript seamlessly into the site. Along with layout on smaller devices<br><br>
-					Read more in my <a href="blogPosts/CharacterSheet/CharacterSheet.html">blog posts</a> about my projects.
-					</p>
-				</div>
-			</div>
-		<h2 class = "year">2021</h2>
-		<div class="tab">
-			<input id="tab-9" type="checkbox" name="tab">
-			<label for="tab-9"> <a href = "https://github.com/Jasper-Hawks/Pysistant">Pysistant<img src="images/py.png"></a> </label>
-				<div class="tab-content">
-					<p>
-					A CLI Python Assistant who can complete mundane tasks for you.<br><br>Materials Used:
-					<br>Vim<br>BeautifulSoup<br>Python 3<br><br>My Role: Designing, coding, and testing<br><br>
-					Challenges Faced: Applied all of my knowedge of Python in this fun and challenging project.<br><br>
-					Read more in my <a href="blogPosts/Pysistant/Pysistant.html">blog posts</a> about my projects.
-					</p>
-				</div>
-			</div>
-		<div class="tab">
-			<input id="tab-8" type="checkbox" name="tab">
-			<label for="tab-8"> <a href = "https://github.com/Jasper-Hawks/GameOfPy">Jasper's Game of Py <img src="images/py.png"></a> </label>
-				<div class="tab-content">
-					<p>
-					Conway's Game of Life made entirely in Python 3.<br><br>Materials Used:
-					<br>Github<br>Vim<br>Python 3<br><br>My Role: Designing, coding, and testing<br><br>
-					Challenges Faced: Applied all of my knowedge of Python in this fun and challenging project.
-					</p>
-				</div>
-			</div>
-		<div class="tab">
-			<input id="tab-6" type="checkbox" name="tab">
-			<label for="tab-6"> <a href = "https://github.com/Jasper-Hawks/Improved-Player-Cmus">Improved Player Cmus <img src="images/bash.png"></a> </label>
-				<div class="tab-content">
-					<p>
-					A shell script that displays the currently playing song on your Polybar<br><br>Materials Used:
-					<br>Git<br>Vim<br>Bash<br><br>My Role: Updating and testing<br><br>
-					Challenges Faced: Learned the basics of Bash shell scripting and Git.
-					</p>
-				</div>
-			</div>
-			<div class="tab">
-				<input id="tab-7" type="checkbox" name="tab">
-				<label for="tab-7"> <a href = "https://github.com/Jasper-Hawks/CLIMeditationTimer">CLIMeditationTimer <img src="images/bash.png"></a> </label>
-					<div class="tab-content">
-						<p>
-						A shell script timer that plays a sound when the timer is up.<br><br>Materials Used:
-						<br>Git<br>Vim<br>Bash<br><br>My Role: Designing, updating, and coding.<br><br>
-						Challenges Faced: Expanded on the basics of Bash Scripting with Functions and Loops. 
-						</p>
-					</div>
-				</div>
-		<h2 class = "year">2020</h2>
-					<div class="tab">
-						<input id="tab-4" type="checkbox" name="tab">
-						<label for="tab-4"> <a href = "https://github.com/Jasper-Hawks/College-Checker">College Checker<img src="images/py.png"></a> </label>
-							<div class="tab-content">
-								<p>
-								An application to check the status of college applications<br><br>Materials Used:
-								<br>Selenium<br>Vim<br>Python 3<br><br>My Role: Designing, updating, and coding.<br><br>
-								Challenges Faced: Implementation of Python frameworks, how to best utilize them, and how to best utilize others documentation.
-								</p>
-							</div>
-						</div>
-						<div class="tab">
-							<input id="tab-5" type="checkbox" name="tab">
-							<label for="tab-5"> <a href = "https://github.com/Jasper-Hawks/WikiPage-Generator/tree/main">WikiPage Generator <img src="images/py.png"></a> </label>
-								<div class="tab-content">
-									<p>
-									An application to generate Wikipedia Page-esque web pages<br><br>Materials Used:
-									<br>Tkinter<br>Vim<br>Python 3<br><br>My Role: Designing, updating, and coding.<br><br>
-									Challenges Faced: Learning about GUI elements and how those elemens function.
-									</p>
-								</div>
-							</div>
-		<h2 class = "year"> 2019</h2>
-			<div class="tab">
-				<input id="tab-1" type="checkbox" name="tab">
-				<label for="tab-1"> <a href = "http://ascension.netlify.com/">ASCENSION <img src="images/java.png"></a> </label>
-					<div class="tab-content">
-						<p>
-						A text based role playing game made by a highschool student<br><br>Materials Used:
-						<br>Eclipse IDE<br>Launch4j<br><br>My Role: In creating ASCENSION I was tasked with designing the game, story, and code.<br><br>
-						Challenges Faced: With ASCENSION I was faced with learning different concepts such as Global and Local variables, conditional and logical operators,
-						and method-class relationships. 
-						</p>
-					</div>
-				</div>
-				<div class="tab">
-					<input id="tab-2" type="checkbox" name="tab">
-					<label for="tab-2"> <a href = "http://ascension.netlify.com/">ASCENSION Website<img src="images/html5.png"><img src="images/css.png"></a> </label>
-						<div class="tab-content">
-							<p>
-							A basic website composed of rudimentary HTML and CSS<br><br>Materials Used:
-							<br><br>Visual Studio Code<br>w3schools Website<br>Computer Hope Website<br><br>My Role: Front-End Developer<br><br>
-							Challenges Faced: Learning the basics of HTML and CSS to create my first ever website.   
-							</p>
-						</div>
-					</div>
-					<div class="tab">
-						<input id="tab-3" type="checkbox" name="tab">
-						<label for="tab-3"> <a href = "https://sergiodelgrande.netlify.com/">Sergio Delgrande's Website <img src="images/html5.png"><img src="images/css.png"></a> </label>
-							<div class="tab-content">
-								<p>
-								A basic website composed of rudimentary HTML and CSS for an artist in New Mexico<br><br>Materials Used:
-								<br><br>Visual Studio Code<br>w3schools Website<br>Computer Hope Website<br><br>My Role: Front-End Developer<br><br>
-								Challenges Faced: Diving deeper into HTML and CSS with more advanced concepts like mobile responsiveness and learning the basics of Javascript along the way.
-								</p>
-							</div>
-						</div>
-					
+	
+	<div class="mainContent">
+	  <div class="singlePane">
+	    <div class="singlePaneText">
+	      <h3>2024</h3>
+	      <hr>
+	    </div>
+	  </div>
+	  <div class="singlePane">
+	    <div class="singlePaneText">
+	      <h3>2023</h3>
+	      <hr>
+	      <div class="projectListing">
+		Worked on private projects.
+	      </div>
+	    </div>
+	  </div>
 
-							<p class = "git">More Projects on my <a href = "https://github.com/Jasper-Hawks">Github</a></p>
+	  <div class="singlePane">
+	    <div class="singlePaneText">
+	      <h3>2022</h3>
+	      <hr>
+	      <h3 class="projectName"><a target="_blank" href="https://github.com/Jasper-Hawks/Bash-Assistant">Bash Assistant</a><img class="inlineProjectImage" src="images/bash.png"></h3>
+	      <div class="projectListing">
+		<a target="_blank" href="https://github.com/Jasper-Hawks/Bash-Assistant"><img class="projectImage" src="images/bashAssistant.png"></a>
+		    A bash script that completes simple tasks like
+		    calculating equations, defining words, managing
+		    items on a TODO list and more. This was a
+		    recration of my Pysistant which I viewed as slow,
+		    inefficent and cumbersome to setup.
+		<h4>Software Used:</h4>
+		<ul>
+		  <li>Neovim</li>
+		  <li>Git</li>
+		  <li>Bash</li>
+		</ul>
+		<h4>Challenges Faced:</h4>
+		Learning the complexities of shell scripting and the
+		exotic syntax. Alongside file I/O and learning about
+		environmental variables in a unix system.
+	      </div>
+
+	      <h3 class="projectName"><a target="_blank" href="https://github.com/Jasper-Hawks/MetaMusic">MetaMusic</a><img class="inlineProjectImage" src="images/py.png">
+	      </h3>
+	      <div class="projectListing">
+	<a target="_blank" href="https://github.com/Jasper-Hawks/MetaMusic"><img class="projectImage" src="images/metamusic.png"></a>
+		MetaMusic is a metadata tag editor that leverages an
+		unofficial YouTube API to apply tags to multiple mp3
+		files at a single command.
+		<h4>Software Used:</h4>
+		<ul>
+		  <li>Neovim</li>
+		  <li>Python3</li>
+		  <li>Git</li>
+		</ul>
+		<h4>Challenges Faced:</h4>
+		Unix based file I/O, integration of stdin, and
+		learning the ID3 tagging system
+	    </div>
+
+	    </div>
+	  </div>
+
+	  <div class="singlePane">
+	    <div class="singlePaneText">
+	      <h3>2021</h3>
+	      <hr>
+	      Archived Projects Coming Soon.
+	    </div>
+	  </div>
+
+	</div>
+
+
+	<footer>
+	  <div class="footerTextContent">
+	    <h3 class="footerHeader">Jasper Hawks</h3>
+	    <ul>
+	      <li><a href="blog.html">Blog</a></li>
+	    <li><a href="blog.html">Work</a></li>
+	    <li><a href="blog.html">Experience</a></li>
+	      <li><a>Social</a></li>
+	    <li><a href="about.html">About</a></li>
+	    </ul>
+	    This website was written by Jasper Hawks and is licensed under the GPL 3. Logo: <a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy</a>
+	  </div>
+	</footer>
+
+
+    <script>
+//    function calcAge(){
+//     	  const MS_PER_DAY =  1000 *  60 *  60 *  24;
+//	  const bDay = new Date('2003-01-01');
+//	  const scratchDate = new Date('2014-07-09');
+//	  console.log(((Math.floor((scratchDate - bDay) / MS_PER_DAY))/365).toFixed(0));
+
+//    }
+//    calcAge()
+	document.querySelector('.hamburgerCont').addEventListener('click', function() {
+
+//	let arr = document.querySelector('.linkListCont').classList);
+	if(document.querySelector('.linkListCont').classList.contains("slide-out")){
+        	document.querySelector('.linkListCont').classList.add('slide-in');
+        	document.querySelector('.linkListCont').classList.remove('slide-out');
+
+	}else{
+
+	    document.querySelector('.linkListCont').classList.remove('slide-in');
+	    document.querySelector('.linkListCont').classList.add('slide-out');
+	}
+	});
+    </script>
 	</body>
 </html>

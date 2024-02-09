@@ -5,42 +5,82 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 <meta charset="UTF-8">
-<meta name="description" content="All about Jasper Hawks.">
 <meta name="viewport" content="initial-scale=1">
+<meta name="description" content="About Jasper Hawks.">
 <meta name="robots" content="index, follow">
-
-
-<title>About me | Jasper Hawks</title>
-
-<link href = "css/about.css" rel = "stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<title>About Me | Jasper Hawks</title>
+<link href="css/main.css" rel="stylesheet">
 </head>
 <body>	
-	
-	<div class = "header">
-		<ul>
-		
-		<li><a href = "index.html">Home</a></li>
-		<li><a href = "works.html">Works</a></li>
-		<li><a href = "blog.html">Blog</a></li> 
-		<li><a href = "contact.html">Contact</a></li>
-		<li><a href = "about.html">About</a></li>
-		
-		</ul>
+    <nav>
+      <button class="hamburgerCont">
+	<div class="hamburgerLine"></div>
+	<div class="hamburgerLine"></div>
+	<div class="hamburgerLine"></div>
+      </button>
+      <img id="logoImg" src="images/JHLogoMini.jpg">
+    </nav>
+    <div class="linkListCont slide-out">
+	<ul class="linkList">
+	    <li class="linkLi"><a class="link" href="index.html">Home</a></li>
+	    <li class="linkLi"><a class="link" href="blog.html">Blog</a></li>
+	    <li class="linkLi"><a class="link" href="works.html">Projects</a></li>
+	    <li class="linkLi"><a class="link" href="experience.html">Resume</a></li>
+	    <li class="linkLi"><a class="link" href="social.html">Socials</a></li>
+	    <li class="linkLi"><a class="link" href="about.html">About</a></li>
+	</ul>
+    </div>
+	<div class="splashOverlayCont">
+	    <video style="background-color: white;" src="images/output.mp4" autoplay muted loop>
+	    Your browser does not support HTML5 video.
+	    </video>
+	    <div class="splashContainer">
+		<div class="splashScreen">
+		<div class="headerContainer">
+		  <h1 class="headerText">Jasper Hawks</h1><hr><br>
+		  <ul class="titlesUL">
+		    <li class="titles"><h2 class="subheaderText">About Me</h2></li>
+		  </ul>
+		</div>
+	    </div> 
 	</div>
-	
-		<h1 class = "welcome">About me</h1>
-		
-		<hr class = "line"></hr>
+    </div>
+
+	<div class="mainContent">
+
+		Simple code is readable, maintainable, and easy to explain. 
+	</div>
+
+	<footer>
+	  <div class="footerTextContent">
+	    <h3 class="footerHeader">Jasper Hawks</h3>
+	    <ul>
+	      <li><a href="blog.html">Blog</a></li>
+	    <li><a href="blog.html">Work</a></li>
+	    <li><a href="blog.html">Experience</a></li>
+	      <li><a>Social</a></li>
+	    <li><a href="about.html">About</a></li>
+	    </ul>
+	    This website was written by Jasper Hawks and is licensed under the GPL 3. Logo: <a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy</a>
+	  </div>
+	</footer>
 
 
-		<p>I'm Jasper Hawks, a Computer Science student and aspiring software developer from Southern Virginia. 
-			Since 2014 I've done anything you can think of with a computer. From game development to web design, my passion for not only computers but computer science is unwavering and I hope to inspire others with my work.
-			I hope you learn from my projects and follow me on my adventures.
+    <script>
+	document.querySelector('.hamburgerCont').addEventListener('click', function() {
+	if(document.querySelector('.linkListCont').classList.contains("slide-out")){
+        	document.querySelector('.linkListCont').classList.add('slide-in');
+        	document.querySelector('.linkListCont').classList.remove('slide-out');
 
-			<br><br>Thank you<br>-Jasper Hawks
-		</p>
+	}else{
 
-
+	    document.querySelector('.linkListCont').classList.remove('slide-in');
+	    document.querySelector('.linkListCont').classList.add('slide-out');
+	}
+	});
+    </script>
 </body>
 </html>
