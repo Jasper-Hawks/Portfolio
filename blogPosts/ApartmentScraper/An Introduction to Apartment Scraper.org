@@ -8,7 +8,6 @@
 #+OPTIONS: title:nil
 #+OPTIONS: html-postamble:nil
 #+OPTIONS: num:nil
-#+TAGS: @PoopyButt
 
 #+BEGIN_export html
 <nav>
