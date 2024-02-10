@@ -26,7 +26,7 @@
 	<div class="hamburgerLine"></div>
 	<div class="hamburgerLine"></div>
       </button>
-      <img id="logoImg" src="images/JHLogoMini.jpg">
+      <a href="index.html"><img id="logoImg" src="images/JHLogoMini.jpg"></a>
     </nav>
     <div class="linkListCont slide-out">
 	<ul class="linkList">
@@ -130,13 +130,13 @@
 
 	<footer>
 	  <div class="footerTextContent">
-	    <h3 class="footerHeader">Jasper Hawks</h3>
+	    <h3 class="footerHeader"><a style="text-decoration: none; color: inherit;" href="index.html">Jasper Hawks</a></h3>
 	    <ul>
 	      <li><a href="blog.html">Blog</a></li>
-	    <li><a href="blog.html">Work</a></li>
-	    <li><a href="blog.html">Experience</a></li>
-	      <li><a>Social</a></li>
-	    <li><a href="about.html">About</a></li>
+	      <li><a href="works.html">Projects</a></li>
+	      <li><a href="experience.html">Resume</a></li>
+	      <li><a href="social.html">Social</a></li>
+	      <li><a href="about.html">About</a></li>
 	    </ul>
 	    This website was written by Jasper Hawks and is licensed under the GPL 3. Logo: <a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy</a>
 	  </div>
@@ -144,17 +144,7 @@
 
 
     <script>
-//    function calcAge(){
-//     	  const MS_PER_DAY =  1000 *  60 *  60 *  24;
-//	  const bDay = new Date('2003-01-01');
-//	  const scratchDate = new Date('2014-07-09');
-//	  console.log(((Math.floor((scratchDate - bDay) / MS_PER_DAY))/365).toFixed(0));
-
-//    }
-//    calcAge()
 	document.querySelector('.hamburgerCont').addEventListener('click', function() {
-
-//	let arr = document.querySelector('.linkListCont').classList);
 	if(document.querySelector('.linkListCont').classList.contains("slide-out")){
         	document.querySelector('.linkListCont').classList.add('slide-in');
         	document.querySelector('.linkListCont').classList.remove('slide-out');

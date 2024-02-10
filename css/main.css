@@ -3,6 +3,7 @@ html{
     font-family: 'Poppins', sans-serif;
     background-color: white ;
     width: 100%;
+    min-width: 900px; 
 }
 body{
     margin: 0;
@@ -73,9 +74,9 @@ video{
     display: flex;
     align-content: space-around; 
     justify-content: space-around;
-    gap: 10em 10em;
-    margin-right: 5em;
-    margin-left: 5em;
+    gap: 20em 20em;
+    margin-right: 10em;
+    margin-left: 10em;
 }
 .leftTone{
     background-color: black;
@@ -113,7 +114,7 @@ img{
     top: -10px; 
     right: 10px;
     padding: 10px;
-    font-size: 1.2vw;
+    font-size: .8vw;
     border: 2px solid;
 
 }
@@ -133,6 +134,7 @@ footer{
 .footerTextContent{
     color: beige;
     padding-left: 8em;
+    padding-right: 8em;
     padding-top: 3em;
     padding-bottom: 3em;
 
@@ -323,6 +325,7 @@ nav{
 .singlePaneText{
     font-size: 1.1vw;
     border: 2px solid;
+    font-size: .8vw;
 /*    margin-top: 10px; */
     position: relative;
     top: -10px;
@@ -358,3 +361,25 @@ h4{
     height: auto;
 
 }
+/*
+@media (min-width:  768px) { 
+  /* Styles 
+    .twoToneContainer{
+	margin-left: 0;
+	gap: 2em 2em;
+
+    }
+    .twoToneContainer{
+	height: 100%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display: flex;
+	align-content: space-around; 
+	justify-content: space-around;
+	margin-left: 0;
+	gap: 2em 2em;
+	margin-right: 0;
+    }
+
+}
+*/
