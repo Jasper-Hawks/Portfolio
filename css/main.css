@@ -1,1 +1,407 @@
+html{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: white ;
+    width: 100%;
+    min-width: 900px; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.splashScreen{
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+a{
+    color: #87CEEB;
+}
+hr{
+    margin: 0;
+}
+#logoImg{
+    height:45px;
+    width: auto;
+    position: absolute;
+    top: 2px;
+    left:  50%; /* Moves the child to the middle of the parent */
+  transform: translateX(-50%); /* Shifts the child back by half of its width */
+}
+.headerText, h1{
+/*    font-size: 6.5em; */
+    font-size: 6.5vw;
+    margin: 0;
+    color: beige;
+}
+.subheaderText, h2{
+    font-size: 3.5vw;
+    margin: 0;
+    color: beige;
+}
+
+.headerContainer{
+    align-self: center;
+    padding-left: 10%;
+    width: fit-content;
+}
+video{
+    display: block;
+    width: 100%;
+    height: auto; 
+}
+.splashContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    align-items: center;
+}
+.mainContent{
+    height: fit-content;
+}
+.twoToneContainer{
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    align-content: space-around; 
+    justify-content: space-around;
+    gap: 20vw 20vw;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+.leftTone{
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+p{
+    color: black;
+
+}
+.rightTone{
+    background-color: black;
+/*    margin-left: 20em; */
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-width: 40%;
+    height: fit-content;
+}
+img{
+    width: 100%;
+
+}
+#rockClimbingPhoto{
+    position: relative;
+    min-width: 300px;
+    bottom: -15px; 
+    left: 10px;
+}
+.rightToneTextCont{
+    background-color: white;
+    position: relative;
+    top: -10px; 
+    right: 10px;
+    padding: 10px;
+    font-size: .8vw;
+    border: 2px solid;
+
+}
+h3{
+    margin: 0;
+}
+footer{
+    background-color: #202020;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.footerHeader{
+    font-size: 2vw;
+}
+.footerTextContent{
+    color: beige;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+.splashOverlayCont{
+
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.splashOverlayCont::before{
+    /* This is for the black overlay on the video*/
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+nav{
+    background-color: #202020;
+    display:flex;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 1000;
+}
+.hamburgerCont:hover{
+    cursor:pointer;
+}
+.hamburgerCont{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    display:block;
+    width: fit-content;
+    padding-left: 10px;
+}
+.hamburgerLine{
+  width: 35px;
+  height: 5px;
+  background-color: beige;
+  margin: 6px 0;
+}
+.link{
+    font-size: 3vw;
+    text-align: center;
+}
+.linkLi{
+    width: 100%;
+    text-align: center;
+
+}
+.linkList{
+/*    position: relative;
+    top: 50px; 
+    padding-top: 0; */
+
+ position: absolute;
+    top:  50%; /* Position at  50% from the top */
+    transform: translateY(-50%); /* Move up by half the child's own height */
+
+    margin:auto;
+    text-align: center;
+}
+.linkListCont{
+    display: flex;
+    height: 101vh;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    background-color: rgba(32,32,32,0.8);
+    z-index: 100;
+
+}
+@keyframes fadeInUp {
+  from {
+    opacity:  0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity:  1;
+    transform: translateY(0);
+  }
+}
+
+.titlesUL li {
+  opacity:  0; /* Start with items invisible */
+  transform: translateY(20px); /* Move items slightly down */
+  transition: opacity  0.5s, transform  0.5s; /* Transition effects */
+}
+
+/* Stagger the animations using :nth-child */
+.titlesUL li:nth-child(1) {
+  animation: fadeInUp  0.5s  0s forwards; /* No delay for the first item */
+}
+
+.titlesUL li:nth-child(2) {
+  animation: fadeInUp  0.5s  0.5s forwards; /* Delay for the second item */
+}
+
+.titlesUL li:nth-child(3) {
+  animation: fadeInUp  0.5s  1s forwards; /* Delay for the third item */
+}
+
+.titlesUL li:nth-child(4) {
+  animation: fadeInUp  1s  1.5s forwards; /* Delay for the third item */
+}
+.titlesUL li:nth-child(5) {
+  animation: fadeInUp  1.5s  2s forwards; /* Delay for the third item */
+}
+/*
+@keyframes slide-in {
+   0% {
+    max-width:  0;
+    opacity:  0;
+  }
+   100% {
+    max-width:  30%;
+    opacity:  1;
+  }
+}
+
+.slide-in {
+  animation-name: slide-in;
+  animation-duration:  0.5s; /* Adjust the duration as needed 
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.slide-out {
+  animation-name: slide-in;
+  animation-duration:  0.5s; /* Adjust the duration as needed 
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+}
+*/
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Slide-out animation */
+@keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+.slide-in{
+
+    animation: slideIn 1s forwards;
+}
+.slide-out{
+
+    animation: slideOut 1s forwards;
+}
+.singlePane{
+    background-color: black;
+/*    margin-left: 20em; */
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    min-width: 40%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.singlePaneText h3{
+    margin-top: 5px;
+
+}
+
+.singlePaneText{
+    font-size: 1.1vw;
+    border: 2px solid;
+    font-size: .8vw;
+/*    margin-top: 10px; */
+    position: relative;
+    top: -10px;
+    left: -10px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+
+h4{
+    margin: 0;
+}
+
+.projectListing{
+
+    margin-left: 20px;
+}
+.projectName{
+    font-size: 1.5vw;
+
+}
+.projectImage{
+    width: 50%;
+    display: block;
+
+}
+.inlineProjectImage{
+    display: inline;
+    width: 2%;
+    vertical-align: top;
+    height: auto;
+
+}
+@media screen and (max-width:  768px) { 
+    .rightToneTextCont{
+	font-size: 2vw;
+    }
+    .headerText, h1{
+	font-size: 9.8vw;
+	margin: 0;
+	color: beige;
+    }
+    .subheaderText, h2{
+	font-size: 5.5vw;
+	margin: 0;
+	color: beige;
+    }
+    .twoToneContainer{
+	height: 100%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display: flex;
+	align-content: space-around; 
+	justify-content: space-around;
+	gap: 2em 2em;
+	margin-right: 5em;
+	margin-left: 3em;
+    }
+    .footerHeader{
+	font-size: 5vw;
+    }
+
+    .singlePaneText{
+	font-size: 1.1vw;
+	border: 2px solid;
+	font-size: 2vw;
+    /*    margin-top: 10px; */
+	position: relative;
+	top: -10px;
+	left: -10px;
+	background-color: white;
+	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 10px;
+
+    }
+}
